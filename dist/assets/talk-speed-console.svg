@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Presenter timing console</title>
+  <desc id="desc">A console diagram connecting speech rhythm, Enter key input, and presentation progress.</desc>
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="72%">
+      <stop offset="0" stop-color="#103d5d"/>
+      <stop offset="0.48" stop-color="#06182a"/>
+      <stop offset="1" stop-color="#02040a"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g opacity=".22" stroke="#78d9ff">
+    <path d="M80 568h1120M132 496h1016M188 424h904M244 352h792M300 280h680M356 208h568" fill="none"/>
+    <path d="M640 110v500M448 154 306 610M832 154l142 456" fill="none"/>
+  </g>
+  <g filter="url(#glow)">
+    <circle cx="308" cy="360" r="104" fill="#78d9ff" opacity=".14" stroke="#a9edff" stroke-width="3"/>
+    <rect x="536" y="282" width="208" height="156" rx="18" fill="#ffc107" opacity=".16" stroke="#ffe082" stroke-width="4"/>
+    <circle cx="972" cy="360" r="104" fill="#78d9ff" opacity=".14" stroke="#a9edff" stroke-width="3"/>
+  </g>
+  <g font-family="Segoe UI, Arial, sans-serif" font-weight="850" text-anchor="middle">
+    <text x="308" y="338" fill="#dff8ff" font-size="34">TALK</text>
+    <text x="308" y="388" fill="#dff8ff" font-size="34">PACE</text>
+    <text x="640" y="348" fill="#fff3bf" font-size="42">ENTER</text>
+    <text x="640" y="394" fill="#fff3bf" font-size="30">CUE</text>
+    <text x="972" y="338" fill="#dff8ff" font-size="34">VISUAL</text>
+    <text x="972" y="388" fill="#dff8ff" font-size="34">SYNC</text>
+  </g>
+  <g fill="none" stroke="#ffc107" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M420 360h84"/>
+    <path d="m490 332 36 28-36 28"/>
+    <path d="M776 360h84"/>
+    <path d="m846 332 36 28-36 28"/>
+  </g>
+  <g stroke="#78d9ff" stroke-width="5" opacity=".72">
+    <path d="M218 548c86-42 141-42 220 0s137 42 220 0 139-42 220 0 139 42 220 0" fill="none"/>
+  </g>
+</svg>
