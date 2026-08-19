@@ -9,7 +9,12 @@ Markdownで原稿を書くと、スター・ウォーズ風の3DクロールLT�
 - **ビルドツール**: Vite 8.x
 - **言語**: Vanilla JavaScript (ES Modules)
 - **スタイル**: CSS3 (Custom Properties, Keyframes, 3D Transforms)
-- **依存**: なし（Viteのみ devDependency）
+- **ランタイム依存**: なし（`vite` と `wrangler` はいずれも devDependency）
+
+## 前提環境
+
+- **Node.js**: Vite 8 の要件により 20.19+ または 22.12+ が必要です（未満のバージョンではビルドが `Cannot find native binding` 等で失敗します）。
+- **パッケージマネージャ**: npm（`package-lock.json` をコミット済み）
 
 ## プロジェクト構造
 
@@ -40,6 +45,10 @@ npm run build
 # ビルド成果物のプレビュー
 npm run preview
 ```
+
+### テスト・lint・typecheck
+
+現時点でテスト・lint・型チェックのスクリプトや設定は **存在しません**（`package.json` の `scripts` は `dev` / `build` / `preview` のみ）。変更の検証は `npm run build` が成功することと、`npm run dev` / `npm run preview` で実機ブラウザ上の挙動を確認することで行います。素の JavaScript のため型定義もありません。
 
 ## デプロイ（Cloudflare Workers Static Assets）
 
